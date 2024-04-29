@@ -16,11 +16,23 @@ pip install biopython
 pip install pysqlite3
 
 # Installation
-Begin by cloning the repository to your local machine:
 
-git clone https://github.com/Shahram-Bioinfo/DKMS-Task.git
-cd DKMS-Task
+To set up this project locally, follow these steps:
 
+1. **Clone the repository**
+   
+   Start by cloning the repository to your local machine. Open a terminal and run the following command:
+   
+   ```bash
+   git clone https://github.com/Shahram-Bioinfo/DKMS-Task.git
+   
+This command downloads all the project files to a directory named DKMS-Task on your computer.
+
+2. Navigate to the project directoryChange into the project directory with:
+
+   ```bash
+   cd DKMS-Task
+   ```
 # Usage
 To execute the script, provide two FASTQ files as input. Ensure accessibility of these files to the script and possession of the requisite permissions for reading.
 
@@ -42,7 +54,7 @@ To execute the script, provide two FASTQ files as input. Ensure accessibility of
    Enter the path to the second FASTQ file: /path/to/your/second_file.fastq
    ```
 
-   *Note*: Four FASTQ files for testing are available in the "Test" folder.
+   *Note*: Tow FASTQ files for testing are available.
 
 3. **Output**:
    The script manages the merging of FASTQ files, database updates with new sequences, and exportation of these novel sequences to a FASTA file, alongside exporting the entire database to a CSV file.

@@ -65,7 +65,7 @@ To execute the script, provide two FASTQ files as input. Ensure accessibility of
    Run the script using Python:
 
 ```bash
-python query.py
+python3 query.py
 ```
 
    You'll be prompted to input the paths to your FASTQ files:

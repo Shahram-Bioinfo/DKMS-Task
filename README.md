@@ -10,10 +10,13 @@ Before deploying this script, ensure your system meets the following prerequisit
 Python 3.x
 BioPython Library
 SQLite3
+FLASH Tool
+
 You can readily install BioPython and SQLite3 using pip:
 
 pip install biopython
 pip install pysqlite3
+sudo apt-get install flash
 
 # Installation
 

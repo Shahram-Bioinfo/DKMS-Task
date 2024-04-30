@@ -5,18 +5,36 @@ This repository features tools for bioinformatics sequence analysis from FASTQ f
 The cornerstone of this repository is a Python script named query.py, meticulously crafted to automate the merging and conversion of FASTQ files, update sequence databases, and generate comprehensive outputs in both FASTA and CSV formats. Designed with versatility in mind, the script seamlessly handles scenarios where paired-end FASTQ files necessitate merging, sequences require extraction based on user-defined criteria, and database updates are imperative.
 
 # Prerequisites
+
 Before deploying this script, ensure your system meets the following prerequisites:
 
-Python 3.x
-BioPython Library
-SQLite3
-FLASH Tool
+- **Python 3.x**: Ensure Python 3 is installed on your system as the script is compatible with Python 3.
+- **BioPython Library**: Required for biological computation tasks.
+- **SQLite3**: Utilized for database management purposes.
+- **FLASH Tool**: Necessary for merging FASTQ files efficiently.
 
-You can readily install BioPython and SQLite3 using pip:
+## Installation of Prerequisites
 
+You can install the required libraries and tools using the commands below:
+
+### Python Packages
+
+Install BioPython and SQLite3 using pip:
+
+```bash
 pip install biopython
 pip install pysqlite3
+```
+### Installing FLASH Tool
+For Debian-based systems, use apt-get to install the FLASH tool:
+
+ ```bash
 sudo apt-get install flash
+```
+
+Refer to the [official FLASH documentation](https://ccb.jhu.edu/software/FLASH/) for installation instructions on other systems.
+
+
 
 # Installation
 
@@ -25,17 +43,17 @@ To set up this project locally, follow these steps:
 1. **Clone the repository**
    
    Start by cloning the repository to your local machine. Open a terminal and run the following command:
-   
-   ```bash
-   git clone https://github.com/Shahram-Bioinfo/DKMS-Task.git
-   
+
+```bash
+git clone https://github.com/Shahram-Bioinfo/DKMS-Task.git
+```   
 This command downloads all the project files to a directory named DKMS-Task on your computer.
 
 2. Navigate to the project directoryChange into the project directory with:
 
-   ```bash
-   cd DKMS-Task
-   ```
+```bash
+cd DKMS-Task
+```
 # Usage
 To execute the script, provide two FASTQ files as input. Ensure accessibility of these files to the script and possession of the requisite permissions for reading.
 
@@ -46,16 +64,15 @@ To execute the script, provide two FASTQ files as input. Ensure accessibility of
    Navigate to the directory containing the script in your terminal.
    Run the script using Python:
 
-   ```bash
-   python query.py
-   ```
+```bash
+python query.py
+```
 
    You'll be prompted to input the paths to your FASTQ files:
-
-   ```bash
-   Enter the path to the first FASTQ file: /path/to/your/first_file.fastq
-   Enter the path to the second FASTQ file: /path/to/your/second_file.fastq
-   ```
+```bash
+Enter the path to the first FASTQ file: /path/to/your/first_file.fastq
+Enter the path to the second FASTQ file: /path/to/your/second_file.fastq
+```
 
    *Note*: Tow FASTQ files for testing are available.
 
